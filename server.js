@@ -11,13 +11,13 @@ const app = express();
 
 
 // Point static path to dist
-app.use(express.static(path.join(__dirname, 'dist/amc')));
+app.use(express.static(path.join(__dirname, '../dist/amc')));
 
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
   console.log('yooooo')
-  res.sendFile(path.join(__dirname, 'dist/amc/index.html'));
+  res.sendFile(path.join(__dirname, '../dist/amc/index.html'));
 });
 
 /**
