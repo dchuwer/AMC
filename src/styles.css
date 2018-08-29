@@ -1,0 +1,10 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html, body, router-outlet { height: 100%; }
+body { 
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+
+

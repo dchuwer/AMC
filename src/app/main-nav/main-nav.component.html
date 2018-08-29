@@ -1,0 +1,43 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'over'"
+    [opened]="!(isHandset$ | async)">
+    <mat-toolbar color="primary">
+      <button
+      type="button"
+      aria-label="Toggle sidenav"
+      mat-icon-button
+      (click)="drawer.toggle()"
+    >
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink=".">Home</a>
+      <a mat-list-item routerLink="/quien-somos">Quien Somos</a>
+      <a mat-list-item routerLink="/biomagnetismo">Biomagnetismo</a>
+      <a mat-list-item routerLink="/emotional-code">Emotional Code</a>
+      <a mat-list-item routerLink="/acupuntura">Acupuntura</a>
+      <a mat-list-item routerLink="/hipnoterapia">Hipnoterapia</a>
+      <a mat-list-item routerLink="/contacto">Contacto</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>amc</span>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
