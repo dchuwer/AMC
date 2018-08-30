@@ -28,6 +28,10 @@ export class HeaderComponent implements OnDestroy {
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
 
+  navigate(){
+    console.log('test')
+  }
+
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
