@@ -5900,7 +5900,7 @@ var EmotionalCodeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-sidenav-content{\r\n\r\n    height: 400px;\r\n}\r\n\r\nmat-sidenav-container, mat-sidenav-content, mat-sidenav {\r\n    height: 100%;\r\n  }\r\n  \r\n "
+module.exports = "\r\n\r\nmat-sidenav-container, mat-sidenav-content, mat-sidenav {\r\n    height: 100%;\r\n  }\r\n  \r\n "
 
 /***/ }),
 
@@ -5911,7 +5911,7 @@ module.exports = ".example-sidenav-content{\r\n\r\n    height: 400px;\r\n}\r\n\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n\n\n<mat-toolbar color=\"primary\" class=\"example-toolbar\">\n  <button mat-icon-button (click)=\"snav.toggle()\"><mat-icon>menu</mat-icon></button>\n  <h1 class=\"example-app-name\">Dr. Abraham Chuwer</h1>\n</mat-toolbar>\n\n\n<mat-sidenav-container class=\"example-sidenav-container\"\n[style.marginTop.px]=\"mobileQuery.matches ? 56 : 0\">\n<mat-sidenav #snav [mode]=\"mobileQuery.matches ? 'over' : 'side'\"\n[fixedInViewport]=\"mobileQuery.matches\" fixedTopGap=\"56\">\n<mat-nav-list>\n\n<a mat-list-item routerLink=\".\">Home</a>\n<a mat-list-item routerLink=\"/quien-somos\">Quien Somos</a>\n<a mat-list-item routerLink=\"/biomagnetismo\">Biomagnetismo</a>\n<a mat-list-item routerLink=\"/emotional-code\">Emotional Code</a>\n<a mat-list-item routerLink=\"/acupuntura\">Acupuntura</a>\n<a mat-list-item routerLink=\"/hipnoterapia\">Hipnoterapia</a>\n<a mat-list-item routerLink=\"/contacto\">Contacto</a>\n\n</mat-nav-list>\n</mat-sidenav>\n\n\n  <mat-sidenav-content>\n    <router-outlet></router-outlet>\n    \n  </mat-sidenav-content>\n</mat-sidenav-container>\n\n"
+module.exports = "\n\n\n<mat-toolbar color=\"primary\" class=\"example-toolbar\">\n  <button mat-icon-button (click)=\"snav.toggle()\"><mat-icon>menu</mat-icon></button>\n  <h1 class=\"example-app-name\">Dr. Abraham Chuwer</h1>\n</mat-toolbar>\n\n\n<mat-sidenav-container class=\"example-sidenav-container\"\n[style.marginTop.px]=\"mobileQuery.matches ? 0 : 0\">\n<mat-sidenav #snav [mode]=\"mobileQuery.matches ? 'side' : 'side'\"\n[fixedInViewport]=\"false\">\n<mat-nav-list>\n\n<a mat-list-item routerLink=\".\">Home</a>\n<a mat-list-item routerLink=\"/quien-somos\">Quien Somos</a>\n<a mat-list-item routerLink=\"/biomagnetismo\">Biomagnetismo</a>\n<a mat-list-item routerLink=\"/emotional-code\">Emotional Code</a>\n<a mat-list-item routerLink=\"/acupuntura\">Acupuntura</a>\n<a mat-list-item routerLink=\"/hipnoterapia\">Hipnoterapia</a>\n<a mat-list-item routerLink=\"/contacto\">Contacto</a>\n\n</mat-nav-list>\n</mat-sidenav>\n\n\n  <mat-sidenav-content>\n    <router-outlet></router-outlet>\n    \n  </mat-sidenav-content>\n</mat-sidenav-container>\n\n"
 
 /***/ }),
 
